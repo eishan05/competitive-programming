@@ -28,7 +28,7 @@ void unionE(vector<int>& set, int a, int b){
     set[find(set, a)] = find(set, b);
 }
 
-long long kruskal(vector<edge>& edges. int n){
+long long kruskal(vector<edge>& edges, int n){
     //First step of kruskal is to sort all edges w.r.t to their weights (ascending)
     sort(edges.begin(), edges.end());
 
