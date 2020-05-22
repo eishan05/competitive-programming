@@ -31,9 +31,7 @@ int main() {
             if (i * m > j) {
                 dp[i][j] = 0;
             } else {
-                // cout << i << " " << j << ": ";
                 dp[i][j] = max(dp[i][j - 1], dp[i - 1][j - m] + get_sum(j - m + 1, j));
-                // cout << dp[i][j] << endl;
             }
         }
     }
